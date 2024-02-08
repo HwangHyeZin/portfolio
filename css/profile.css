@@ -1,0 +1,28 @@
+/* profile */
+.profile{
+    padding: 15rem 0;
+    
+}
+.profile-cont{display: flex;}
+.profile-cont .left{width: 50%; text-align: center;}
+.profile-cont .left .imgbox{width: 100%; max-width: 300px; display: inline-block; margin-bottom: 2rem;}
+.profile-cont .left .imgbox img{width: 100%;}
+.profile-cont .left p{font-size: 2rem; line-height: 2;font-family: 'NPSfontBold';}
+.profile-cont .right{}
+.profile-cont .right ul{}
+.profile-cont .right ul li{margin-bottom: 60px; line-height: 2;}
+.profile-cont .right ul li h1{ border-bottom: 2px solid #FFA4EB; display: inline-block; font-family: 'NPSfontBold'; margin-bottom: 10px;}
+.profile-cont .right ul li p{font-size: 2rem;}
+.profile-cont .right ul li .skill-wrap{display: flex; gap: 2rem; margin-top: 10px;}
+.profile-cont .right ul li .skill-wrap img{height: 5rem;}
+
+@media screen and (max-width: 800px){
+    .profile{}
+    .profile .inner{}
+    .profile .inner .profile-cont{
+        flex-direction: column; gap: 30px; align-items: center; text-align: center;
+    }
+}
+
+
+

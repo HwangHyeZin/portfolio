@@ -1,0 +1,19 @@
+
+.portfolio{padding: 20rem 0; }
+.sw-work{width: 100%; }
+.sw-work li{border-radius: 10px; overflow: hidden;}
+.sw-work li .img-wrap{width: 100%; cursor: pointer; position: relative;}
+.sw-work li .img-wrap::after{content: ""; display: block; padding-bottom: 56%;}
+.sw-work li .img-wrap img{position: absolute; height: 100%; object-fit: cover; width: 100%;}
+.sw-work li .text-wrap{background-color: #eee; padding: 2rem;}
+.sw-work li .text-wrap h1{margin-bottom: 10px; font-size: 2rem; font-weight: 700;}
+.sw-work li .text-wrap p{font-family: 'Archivo'; color: #555; margin-bottom: 5px;}
+.sw-work li .modal-cont{display: none;}
+
+body.scrollfix{overflow-y: hidden;}
+.mask{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .6); visibility: hidden; opacity: 0; z-index: 1; transition: 0.3s;}
+.mask.active{visibility: visible; opacity: 1;}
+.work-view{position: fixed; width: 90%; max-width: 1600px; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 11; transition: 0.5s; opacity: 0; visibility: hidden;}
+.work-view::after{padding-bottom: 56.25%; content: ""; display: block;}
+.work-view iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;}
+.work-view.active{opacity: 1; visibility: visible;}
